@@ -8,8 +8,10 @@ const SelectForm = (props) => {
             <select
             onChange={e => props.valorAlterado(e.target.value)}
             required={props.obrigatorio}
+            value={props.valor}
             >
-                {props.itens.map(v => <option key={v}>{v}</option>)}
+                <option value=''></option>
+                {props.itens.map(v => {return <option key={v}>{v}</option>})}
             </select>
         </div>
     )
