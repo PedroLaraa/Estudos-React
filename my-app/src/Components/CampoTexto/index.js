@@ -2,13 +2,23 @@ import './CampoTexto.css'
 
 const CampoTexto = (props) => {
 
+    const propsPlaceholderModificada = `${props.placeholder}...`
+
+    const capturaDados = (e) => {
+        props.valorAlterado(e.target.value)
+    };
+
     return(
         <div className='campo-texto'>
             <label>{props.label}</label>
-            <input placeholder={props.placeholder}></input>
+            <input
+            value={props.valor} 
+            required={props.obrigatorio} 
+            placeholder={propsPlaceholderModificada}
+            onChange={capturaDados}
+            ></input>
         </div>
-    )
-
+    );
 };
 
 export default CampoTexto;

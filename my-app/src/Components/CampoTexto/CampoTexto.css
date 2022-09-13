@@ -5,7 +5,7 @@
 .campo-texto label{
     display: block;
     margin-bottom: 8px;
-    font-size: 1.6rem;
+    font-size: 24px;
 }
 
 .campo-texto input{
@@ -15,5 +15,5 @@
     border: none;
     padding: 2rem;
     box-sizing: border-box;
-    font-size: 1.6rem;
+    font-size: 24px;
 }
