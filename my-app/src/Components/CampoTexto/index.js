@@ -5,7 +5,7 @@ const CampoTexto = (props) => {
     return(
         <div className='campo-texto'>
             <label>{props.label}</label>
-            <input placeholder='Digite o seu nome:'></input>
+            <input placeholder={props.placeholder}></input>
         </div>
     )
 
